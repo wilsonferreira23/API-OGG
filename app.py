@@ -81,7 +81,7 @@ async def get_conversion_status(task_id: str):
     status = conversion_tasks[task_id]
     if status == "completed":
         output_file_name = f"{task_id}.ogg"
-        return {"status": "completed", "converted_audio_url": f"http://127.0.0.1:8000/files/{output_file_name}"}
+        return {"status": "completed", "converted_audio_url": f"https://api-ogg-production.up.railway.app/files/{output_file_name}"}
     elif status == "failed":
         return {"status": "failed", "detail": "Houve um erro na conversão do áudio."}
     else:
