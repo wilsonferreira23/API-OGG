@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+pydub
+aiohttp
+ffmpeg-python  # Se você estiver utilizando o ffmpeg a partir de Python
